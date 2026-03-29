@@ -71,7 +71,7 @@ def scan_ports(ip, start_port, end_port):
             service = get_service(port)
             risk = classify_port(port)
 
-            print(f"[OPEN] Porta {port} | Servico: {service} | Risco: {risk}")
+            print(f"🚪 Porta {port} | Servico: {service} | Risco: {risk}")
 
             open_ports.append({
                 "port": port,
@@ -120,8 +120,8 @@ def main():
     target = input("Digite o IP ou dominio (ex: google.com ou 127.0.0.1): ")
     ip = resolve_target(target)
 
-    print(f"\n[*] Alvo: {target}")
-    print(f"[*] IP: {ip}")
+    print(f"\n🎯 Alvo: {target}")
+    print(f"🌐 IP: {ip}")
 
     # Intervalo padrao + opcao personalizada
     print("\n[*] Intervalo padrao recomendado: 1 a 1024")
@@ -134,7 +134,7 @@ def main():
         start_port = get_port_input("Porta inicial: ")
         end_port = get_port_input("Porta final: ")
 
-    print(f"\n[SCAN] Escaneando de {start_port} ate {end_port}...\n")
+    print(f"\n🔎 Escaneando de {start_port} ate {end_port}...\n")
 
     inicio = datetime.now()
 
@@ -143,10 +143,10 @@ def main():
     fim = datetime.now()
 
     print("\n" + "=" * 60)
-    print("[+] Escaneamento finalizado")
-    print(f"[*] Inicio: {inicio}")
-    print(f"[*] Fim: {fim}")
-    print(f"[*] Total de portas abertas: {len(open_ports)}")
+    print("✅ Escaneamento finalizado")
+    print(f"🕛​ Inicio: {inicio}")
+    print(f"🕐 Fim: {fim}")
+    print(f"📊​ Total de portas abertas: {len(open_ports)}")
 
     # Analise de risco
     high = sum(1 for p in open_ports if p["risk"] == "Alto risco")
@@ -154,9 +154,9 @@ def main():
     low = sum(1 for p in open_ports if p["risk"] == "Baixo risco")
 
     print("\n[RESULT] Classificacao de risco:")
-    print(f"(-) Alto risco: {high}")
-    print(f"(!) Medio risco: {medium}")
-    print(f"(+) Baixo risco: {low}")
+    print(f"🔴 Alto risco: {high}")
+    print(f"🟡 Medio risco: {medium}")
+    print(f"🟢 Baixo risco: {low}")
 
     if open_ports:
         print("\nResumo:")
@@ -167,13 +167,13 @@ def main():
 
     report = generate_report(target, ip, open_ports, start_port, end_port, inicio, fim)
 
-    print("\n[+] Relatorio gerado com sucesso!")
-    print(f"[*] Local: {report.resolve()}")
+    print("\n📃 Relatorio gerado com sucesso!")
+    print(f"📂 Local: {report.resolve()}")
 
-    print("\n[*] Analise concluida.")
-    print("[!] Recomenda-se aplicar boas praticas de seguranca.")
+    print("\n🕵️‍♂️  Analise concluida.")
+    print("⚠️ Recomenda-se aplicar boas praticas de seguranca.")
 
-    print("\nDesenvolvido por Wagner Pessoa")
+    print("\n👨🏻‍💻 Desenvolvido por Wagner Pessoa")
     print("=" * 60)
 
     input("\nPressione Enter para sair...")

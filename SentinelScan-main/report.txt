@@ -1,10 +1,11 @@
-PortShield - Relatorio
+SentinelScan - Relatorio
 ========================================
 Alvo: google.com
 IP: 172.217.172.142
-Portas: 1 - 100
-Inicio: 2026-03-28 20:38:18.445552
-Fim: 2026-03-28 20:39:09.178662
+Portas: 1 - 1024
+Inicio: 2026-03-28 23:06:33.370644
+Fim: 2026-03-28 23:15:13.682360
 
 Portas abertas:
 - Porta 80 | HTTP | Baixo risco
+- Porta 443 | HTTPS | Baixo risco
