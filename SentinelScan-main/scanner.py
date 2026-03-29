@@ -124,7 +124,7 @@ def main():
     print(f"🌐 IP: {ip}")
 
     # Intervalo padrao + opcao personalizada
-    print("\n[*] Intervalo padrao recomendado: 1 a 1024")
+    print("\n⚠️  Intervalo padrao recomendado: 1 a 1024")
     usar_padrao = input("Deseja usar o padrao? (s/n): ").lower()
 
     if usar_padrao == "s":
@@ -153,7 +153,7 @@ def main():
     medium = sum(1 for p in open_ports if p["risk"] == "Medio risco")
     low = sum(1 for p in open_ports if p["risk"] == "Baixo risco")
 
-    print("\n[RESULT] Classificacao de risco:")
+    print("\n⚠️  Classificacao de risco:")
     print(f"🔴 Alto risco: {high}")
     print(f"🟡 Medio risco: {medium}")
     print(f"🟢 Baixo risco: {low}")
@@ -170,10 +170,10 @@ def main():
     print("\n📃 Relatorio gerado com sucesso!")
     print(f"📂 Local: {report.resolve()}")
 
-    print("\n🔎  Analise concluida.")
-    print("⚠️ Recomenda-se aplicar boas praticas de seguranca.")
+    print("\n🔎 Analise concluida.")
+    print("⚠️  Recomenda-se aplicar boas praticas de seguranca.")
 
-    print("\n🖥️ Desenvolvido por Wagner Pessoa")
+    print("\n🖥️  Desenvolvido por Wagner Pessoa")
     print("=" * 60)
 
     input("\nPressione Enter para sair...")
