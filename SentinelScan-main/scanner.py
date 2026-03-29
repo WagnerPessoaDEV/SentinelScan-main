@@ -134,7 +134,6 @@ def main():
         start_port = get_port_input("Porta inicial: ")
         end_port = get_port_input("Porta final: ")
 
-    print(f"\n🔎 Escaneando de {start_port} ate {end_port}...\n")
 
     inicio = datetime.now()
 
