@@ -1,4 +1,4 @@
-# 🔐 SentinelS — Scanner Inteligente de Portas
+# 🔐 SentinelScan — Scanner Inteligente de Portas
 
 Projeto desenvolvido com foco em **fundamentos de redes**, **segurança da informação** e **análise de serviços expostos**, simulando um cenário básico de auditoria de segurança.
 
