@@ -170,10 +170,10 @@ def main():
     print("\n📃 Relatorio gerado com sucesso!")
     print(f"📂 Local: {report.resolve()}")
 
-    print("\n🕵️‍♂️  Analise concluida.")
+    print("\n🔎  Analise concluida.")
     print("⚠️ Recomenda-se aplicar boas praticas de seguranca.")
 
-    print("\n👨🏻‍💻 Desenvolvido por Wagner Pessoa")
+    print("\n🖥️ Desenvolvido por Wagner Pessoa")
     print("=" * 60)
 
     input("\nPressione Enter para sair...")

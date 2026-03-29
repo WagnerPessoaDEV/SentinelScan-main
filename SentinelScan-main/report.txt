@@ -2,9 +2,9 @@ SentinelScan - Relatorio
 ========================================
 Alvo: google.com
 IP: 172.217.172.142
-Portas: 1 - 1024
-Inicio: 2026-03-28 23:06:33.370644
-Fim: 2026-03-28 23:15:13.682360
+Portas: 1 - 500
+Inicio: 2026-03-28 23:56:00.054225
+Fim: 2026-03-29 00:00:12.477345
 
 Portas abertas:
 - Porta 80 | HTTP | Baixo risco
