@@ -1,4 +1,4 @@
-# 🔐 PortShield — Scanner Inteligente de Portas
+# 🔐 SentinelS — Scanner Inteligente de Portas
 
 Projeto desenvolvido com foco em **fundamentos de redes**, **segurança da informação** e **análise de serviços expostos**, simulando um cenário básico de auditoria de segurança.
 
@@ -6,7 +6,7 @@ Projeto desenvolvido com foco em **fundamentos de redes**, **segurança da infor
 
 ## 📖 Sobre o projeto
 
-O **PortShield** é uma aplicação criada em Python para realizar o escaneamento de portas, identificar serviços conhecidos e classificar possíveis riscos com base nas portas abertas encontradas.
+O **SentinelScan** é uma aplicação criada em Python para realizar o escaneamento de portas, identificar serviços conhecidos e classificar possíveis riscos com base nas portas abertas encontradas.
 
 A proposta do projeto é demonstrar, de forma prática, conceitos importantes de **redes de computadores**, **segurança ofensiva controlada** e **análise de exposição de serviços**, gerando ao final um relatório automático com os resultados da varredura.
 
@@ -61,7 +61,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias e conceitos:
 
 Abaixo, um exemplo da execução do scanner no terminal:
 
-![Execução do Scanner](portshield-terminal.png)
+![Execução do Scanner](SentinelScan-terminal.png)
 
 ---
 

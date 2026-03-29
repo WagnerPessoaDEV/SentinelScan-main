@@ -32,7 +32,7 @@ MEDIUM_RISK_PORTS = {22, 25, 110, 139, 143, 3306}
 
 def print_banner():
     print("=" * 60)
-    print("PortShield - Scanner Inteligente de Portas")
+    print("SentinelScan - Scanner Inteligente de Portas")
     print("=" * 60)
     print("Wagner Pessoa.\n")
 
@@ -88,7 +88,7 @@ def generate_report(target, ip, open_ports, start, end, inicio, fim):
     path = Path("report.txt")
 
     with open(path, "w", encoding="utf-8") as file:
-        file.write("PortShield - Relatorio\n")
+        file.write("SentinelScan - Relatorio\n")
         file.write("=" * 40 + "\n")
         file.write(f"Alvo: {target}\n")
         file.write(f"IP: {ip}\n")
