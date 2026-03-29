@@ -1,0 +1,1 @@
+Escaneamento finalizado

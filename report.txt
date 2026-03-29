@@ -1,0 +1,9 @@
+CyberScan - Relatorio
+========================================
+Alvo: google.com
+IP: 172.217.30.110
+Portas: 1 - 2
+Inicio: 2026-03-21 22:17:27.217931
+Fim: 2026-03-21 22:17:28.236851
+
+Nenhuma porta aberta encontrada.
