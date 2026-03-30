@@ -34,7 +34,6 @@ def print_banner():
     print("=" * 60)
     print("SentinelScan - Scanner Inteligente de Portas")
     print("=" * 60)
-    print("Wagner Pessoa.\n")
 
 
 def resolve_target(target):
@@ -62,6 +61,7 @@ def scan_ports(ip, start_port, end_port):
     open_ports = []
 
     for port in range(start_port, end_port + 1):
+        print(f"\r🔄 Escaneando porta {port}/{end_port}...", end="", flush=True)
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.settimeout(0.5)
 
@@ -71,6 +71,7 @@ def scan_ports(ip, start_port, end_port):
             service = get_service(port)
             risk = classify_port(port)
 
+            print()
             print(f"🚪 Porta {port} | Servico: {service} | Risco: {risk}")
 
             open_ports.append({
@@ -80,6 +81,8 @@ def scan_ports(ip, start_port, end_port):
             })
 
         sock.close()
+
+    print()
 
     return open_ports
 
@@ -172,7 +175,7 @@ def main():
     print("\n🔎 Analise concluida.")
     print("⚠️  Recomenda-se aplicar boas praticas de seguranca.")
 
-    print("\n🖥️  Desenvolvido por Wagner Pessoa")
+    print("\n🖥️  Desenvolvido por @WagnerPessoaDEV")
     print("=" * 60)
 
     input("\nPressione Enter para sair...")
