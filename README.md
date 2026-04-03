@@ -37,7 +37,7 @@ O principal objetivo deste projeto é **simular uma análise inicial de seguran�
 
 ## 🧠 Destaque do projeto
 
-O grande destaque do **CyberScan** é a capacidade de unir, em um único fluxo, o **escaneamento de portas**, a **identificação de serviços** e a **análise de risco**, tornando o projeto uma ótima demonstração prática de conhecimentos em:
+O grande destaque do **SentinelScan** é a capacidade de unir, em um único fluxo, o **escaneamento de portas**, a **identificação de serviços** e a **análise de risco**, tornando o projeto uma ótima demonstração prática de conhecimentos em:
 
 - Redes de computadores
 - Segurança da informação
